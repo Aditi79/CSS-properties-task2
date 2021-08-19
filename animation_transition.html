@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation and transition</title>
+    <style>
+        .one{
+            width: 100px;
+            height: 100px;
+            background: rgb(250, 188, 234);
+            position: relative;
+            animation: lefttoright 8s infinite;
+            animation-delay: 2s;
+            animation-direction: alternate;
+        }
+        @keyframes lefttoright {
+            from {left:0px}
+            to {left: 400px;}
+        }
+
+        .two{
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition-property: width;
+            transition-duration: 4s;
+            transition-delay: 1s;
+        }
+        .two:hover{
+            width: 500px;
+        }
+
+        .three{
+            color: crimson;
+            font-size: 30px;
+            transition-duration: 2s;
+        }
+        .three:hover{
+            color: blue;
+            font-size: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="one">WELCOME</div>
+
+    <h2></h2>
+    <div class="two">
+    </div>
+
+    <h2></h2>
+    <h3 class="three">This is title2</h3>
+</body>
+</html>
